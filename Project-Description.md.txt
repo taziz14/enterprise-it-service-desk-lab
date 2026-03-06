@@ -1,0 +1,33 @@
+# Enterprise IT Service Desk Simulation
+
+This project simulates a real enterprise IT Service Desk environment using Jira Service Management and Microsoft 365 administrative tools.
+
+The objective of the project is to demonstrate practical IT support workflows including incident creation, investigation, root cause analysis, escalation procedures, and ticket resolution.
+
+Three realistic enterprise support scenarios were simulated:
+
+1. Microsoft 365 authentication failure caused by missing Multi-Factor Authentication configuration.
+2. Endpoint compliance failure due to missing BitLocker encryption identified through device management policies.
+3. Network printer outage caused by a stalled print queue blocking printer services.
+
+Each incident was processed through the full IT service management lifecycle:
+
+• Incident creation
+• Technical investigation
+• Root cause identification
+• Internal documentation
+• Customer communication
+• Resolution and ticket closure
+
+The lab environment was built using Jira Service Management as the ticketing platform and Microsoft 365 administrative tools including Microsoft Entra ID and Microsoft Intune.
+
+This project demonstrates core IT support competencies including:
+
+• Helpdesk operations
+• Incident management
+• Identity and authentication troubleshooting
+• Endpoint compliance analysis
+• Hardware and network troubleshooting
+• Technical documentation and communication
+
+The project provides a realistic simulation of how enterprise IT teams manage and resolve technical incidents in production environments.
