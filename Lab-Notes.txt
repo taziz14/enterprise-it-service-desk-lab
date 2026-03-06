@@ -1,0 +1,133 @@
+Enterprise IT Service Desk Simulation Lab
+Author: Tausif Bin Aziz
+
+Overview
+
+This lab simulates a real-world enterprise IT Service Desk environment using Jira Service Management as the ticketing system and Microsoft 365 as the corporate identity and device management platform.
+
+The objective of this lab was to practice and demonstrate the full lifecycle of incident management, including issue reporting, investigation, root cause analysis, escalation, customer communication, and ticket resolution.
+
+The lab environment replicates typical IT support scenarios encountered in enterprise organizations.
+
+Tools and Technologies Used
+
+• Jira Service Management (Ticketing System)
+• Microsoft 365 Admin Center
+• Microsoft Entra ID (Azure Active Directory)
+• Microsoft Intune
+• Windows 11
+• Web-based Service Desk Portal
+
+Environment Setup
+
+1. Created an Enterprise IT Service Desk project in Jira Service Management.
+2. Configured the service desk portal for users to submit IT support requests.
+3. Created categories for service requests including:
+
+   * Common Requests
+   * Computers
+   * Logins and Accounts
+   * Applications
+   * Servers and Infrastructure
+4. Configured agent queues to monitor incoming support tickets.
+5. Simulated enterprise IT incidents and processed them through the ticket lifecycle.
+
+Incident Scenario 1: Microsoft 365 Login Failure
+
+Problem:
+A user reported that they were unable to sign in to Microsoft 365 services.
+
+Investigation Steps:
+• Checked Microsoft Entra ID user account status
+• Verified authentication methods for the user
+• Reviewed sign-in logs for authentication failures
+• Identified that the user had no registered Multi-Factor Authentication (MFA) method
+
+Root Cause:
+The account was blocked from accessing Microsoft 365 due to missing MFA configuration required by the organization's security policy.
+
+Resolution:
+• Configured Microsoft Authenticator as the MFA method
+• Verified successful login attempt
+• Updated the ticket with investigation notes and resolution details
+• Notified the user and closed the ticket
+
+Incident Scenario 2: Endpoint Compliance Failure
+
+Problem:
+A corporate laptop was flagged as non-compliant in the endpoint management system.
+
+Investigation Steps:
+• Checked device compliance status in Microsoft Intune
+• Reviewed endpoint security policy requirements
+• Identified that BitLocker encryption was not enabled on the device
+
+Root Cause:
+The device did not meet the organization's compliance requirements because disk encryption was disabled.
+
+Escalation:
+The incident was escalated to the Endpoint Administration team for remediation.
+
+Resolution:
+• BitLocker encryption was enabled on the device
+• Device compliance status updated to compliant
+• Ticket updated with escalation and resolution documentation
+• Customer notified that the issue had been resolved
+
+Incident Scenario 3: Network Printer Outage
+
+Problem:
+Users in the finance department reported that the shared office printer was not responding to print jobs.
+
+Investigation Steps:
+• Checked network connectivity to the printer
+• Verified printer service status
+• Reviewed print queue on the print server
+• Identified a stalled print job blocking the queue
+
+Root Cause:
+A corrupted print job caused the print queue to stall, preventing additional print jobs from being processed.
+
+Resolution:
+• Cleared the stalled print queue
+• Restarted the print spooler service
+• Verified printer connectivity and test print
+• Updated ticket with resolution notes
+• Notified users that printing services were restored
+
+Troubleshooting Techniques Demonstrated
+
+• Identity and authentication troubleshooting
+• Endpoint compliance investigation
+• Security policy enforcement
+• Network connectivity verification
+• Print spooler troubleshooting
+• Ticket documentation best practices
+
+Service Desk Workflow Demonstrated
+
+User reports issue
+↓
+Incident ticket created
+↓
+Investigation and troubleshooting
+↓
+Root cause identification
+↓
+Escalation if required
+↓
+Resolution and service restoration
+↓
+Customer notification
+↓
+Ticket closure
+
+Skills Practiced
+
+• Incident management
+• IT service desk workflows
+• Microsoft 365 identity troubleshooting
+• Endpoint security compliance analysis
+• Hardware and network troubleshooting
+• Customer communication
+• Technical documentation
